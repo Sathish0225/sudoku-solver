@@ -13,7 +13,7 @@
   }
 }
 
-.App-header {
+.App-Header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -32,7 +32,72 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.cellInput {
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  text-align: center;
+  padding: 0px;
+  border: 1px solid black;
+}
+
+table {
+  border-collapse: collapse;
+  border: 3px solid bisque;
+  background-color: bisque;
+}
+
+td {
+  padding: 0;
+}
+
+.buttonContainer {
+  margin-top: 20px;
+}
+
+.checkButton {
+  background-color: #2563EB;
+  font-weight: bold;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 20px;
+  font-size: 14px;
+  margin: 0px 10px;
+  color: #fff;
+}
+
+.solveButton {
+  background-color: #15803D;
+  font-weight: bold;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 20px;
+  font-size: 14px;
+  margin: 0px 10px;
+  color: #fff;
+}
+
+.resetButton {
+  background-color: #B42225;
+  font-weight: bold;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 20px;
+  font-size: 14px;
+  margin: 0px 10px;
+  color: #fff;
+}
+
+.bBorder {
+  border-bottom: 2px solid black;
+}
+
+.rBorder {
+  border-right: 2px solid black;
 }
