@@ -157,7 +157,7 @@ function App() {
     <div className="App">
       <div className="App-Header">
         <h3>Sudoku Solver</h3>
-        <table>
+        <table className="table-auto">
           <tbody>
             {[0, 1, 2, 3, 4, 5, 6, 7, 8].map((row, rindex) => {
               return (
@@ -179,7 +179,7 @@ function App() {
                               : sudokuArr[row][col]
                           }
                           className="cellInput"
-                          disabled={sudokuArr[row][col] !== -1}
+                          disabled={initial[row][col] !== -1}
                         />
                       </td>
                     );
@@ -190,13 +190,22 @@ function App() {
           </tbody>
         </table>
         <div className="buttonContainer">
-          <button className="checkButton" onClick={checkSudoko}>
+          <button
+            className="checkButton rounded-md text-white"
+            onClick={checkSudoko}
+          >
             Check
           </button>
-          <button className="solveButton" onClick={solveSudoko}>
+          <button
+            className="solveButton rounded-md text-white"
+            onClick={solveSudoko}
+          >
             Solve
           </button>
-          <button className="resetButton" onClick={resetSudoko}>
+          <button
+            className="resetButton rounded-md text-white"
+            onClick={resetSudoko}
+          >
             Reset
           </button>
         </div>

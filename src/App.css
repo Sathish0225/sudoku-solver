@@ -1,3 +1,7 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
 .App {
   text-align: center;
 }
@@ -43,7 +47,7 @@
   height: 50px;
   font-size: 20px;
   text-align: center;
-  padding: 0px;
+  padding: 0;
   border: 1px solid black;
 }
 
@@ -63,34 +67,26 @@ td {
 
 .checkButton {
   background-color: #2563EB;
-  font-weight: bold;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 20px;
-  font-size: 14px;
-  margin: 0px 10px;
-  color: #fff;
 }
 
 .solveButton {
   background-color: #15803D;
-  font-weight: bold;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 20px;
-  font-size: 14px;
-  margin: 0px 10px;
-  color: #fff;
 }
 
 .resetButton {
   background-color: #B42225;
+}
+
+.checkButton,
+.solveButton,
+.resetButton {
   font-weight: bold;
   padding: 12px 20px;
   border: none;
-  border-radius: 20px;
+  border-radius: 6px;
   font-size: 14px;
-  margin: 0px 10px;
+  margin: 0px 6px;
+  width: 120px;
   color: #fff;
 }
 
@@ -100,4 +96,19 @@ td {
 
 .rBorder {
   border-right: 2px solid black;
+}
+
+@media (max-width: 600px) {
+  .cellInput {
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+  }
+
+  .checkButton,
+  .solveButton,
+  .resetButton {
+    width: 80px;
+    font-size: 12px;
+  }
 }
